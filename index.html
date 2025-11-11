@@ -1,759 +1,595 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Codvion</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodVion</title>
+    <meta name="description"
+        content="Codvion offers creative web development, SEO, embedded system, ai & machine learning, and digital marketing solutions. Build fast, modern, and SEO-optimized websites with Codvion.">
+    <meta name="keywords"
+        content="Codvion, web development, web design, SEO, digital marketing, responsive websites, frontend development, Pakistan web agency, embedded system, ai & machine learning">
+    <meta name="author" content="Codvion">
+    <link rel="canonical" href="https://www.codvion.com/">
+    <link rel="icon" type="image/png" href="Images/title.png">
+    <meta property="og:image" content="https://codvion.site/Images/title.png">
+    <meta name="twitter:image" content="https://codvion.site/Images/title.png">
+    <meta property="og:type" content="Website">
+    <meta property="og:title" content="CodVion">
+    <meta property="og:description"
+        content="Explore Codvion's professional web design, SEO,, Embedded system, AI & Machine Learning and app development services to grow your digital presence.">
+    <meta property="og:url" content="https://www.codvion.com/">
+    <meta property="og:site_name" content="Codvion">
+    <meta property="og:image" content="https://www.codvion.com/images/preview.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Codvion — Web Development & SEO Experts">
+    <meta name="twitter:description"
+        content="We help brands grow online through creative websites, SEO, and digital marketing solutions.">
+    <meta name="twitter:image" content="https://www.codvion.com/images/preview.jpg">
+    <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Codvion",
+    "url": "https://www.codvion.com",
+    "logo": "https://www.codvion.com/images/logo.png",
+    "sameAs": [
+      "https://www.facebook.com/codvion",
+      "https://www.instagram.com/codvion",
+      "https://www.linkedin.com/company/codvion"
+    ],
+    "description": "Codvion provides creative web development, SEO, and digital marketing solutions to help brands grow online."
+  }
+  </script>
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <meta name="theme-color" content="#0f172a">
 
-  <!-- Favicons -->
-  <link href="assets/img/main/codvion.jpeg" rel="icon">
-  <link href="assets/img/main/codvion.jpeg" rel="apple-touch-icon">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="items/res.css">
+    <link rel="stylesheet" href="items/anima.css">
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
-
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
 </head>
 
-<body class="index-page">
-  <!-- Header Start -->
-  <header id="header" class="header d-flex align-items-center sticky-top">
-    <div class="container position-relative d-flex align-items-center justify-content-between">
-      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
-        <img src="assets/img/main/codvion.png" alt="">
-        <h1 class="sitename">Codvion</h1>
-      </a>
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="#hero" class="active">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav>
-      <div class="header-social-links">
-        <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
-        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
-      </div>
+<body>
+    <!-- Preloader Start -->
+    <div class="preloader">
+        <div class="loader">
+            <div class="eye-logo"></div>
+            <div class="loading-text">CodVion</div>
+        </div>
     </div>
-  </header>
+    <!-- Preloader End -->
 
-  <main class="main">
 
-    <!-- Hero Section -->
-    <section id="hero" class="hero section">
-      <div class="hero-background">
-        <div class="hero-overlay"></div>
-      </div>
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row justify-content-center text-center">
-          <div class="col-lg-10">
-            <div class="hero-content" data-aos="fade-up" data-aos-delay="200">
-              <h1>Build Smarter, Code Faster Welcome to Codvion</h1>
-              <p>Empowering developers and businesses with cutting-edge tools, seamless solutions, and innovative
-                digital experiences. At Codvion, we turn code into impact.</p>
-
-              <div class="hero-btns" data-aos="fade-up" data-aos-delay="300">
-                <a href="#services" class="btn btn-primary">Get Started</a>
-                <a href="#about" class="btn btn-outline glightbox">
-                  Learn More
+    <!-- Header Start -->
+    <header class="header">
+        <section class="header-section">
+            <div class="header-main">
+                <a href="#" class="a-o-s">
+                    <img src="Images/Only_logo.png" alt="CodVion logo">
                 </a>
-              </div>
+                <a href="#" class="header-logo-item a-o-s">
+                    CodVion
+                </a>
             </div>
-          </div>
+            <div class="header-items">
+                <nav class="a-o-s">
+                    <a href="#home" class="active">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#services">Services</a>
+                    <a href="#portfolio">Portfolio</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+            </div>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                &#9776;
+            </button>
+        </section>
+    </header>
+    <!-- Header End -->
+
+
+    <!-- Particle Background -->
+    <div id="particles-js"></div>
+    <!-- Particles End -->
+
+
+    <!-- Hero Section Start-->
+    <section class="hero-section" id="home">
+        <div class="hero-container">
+            <div class="hero-items">
+                <h1 class="hero-title a-o-s">Transform Your<span class="highlight"> Vision</span> Into Reality</h1>
+                <p class="hero-subtitle a-o-s">Cutting-edge CodVionnology solutions for web, mobile, embedded systems,
+                    and
+                    AI. We bring innovation to life.</p>
+                <div class="hero-buttons">
+                    <a href="#portfolio" class="a-o-s">View Our Work</a>
+                    <a href="#contact" class="a-o-s">Get Started <i
+                            class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="hero-image a-o-s">
+                <img src="Images/hero-section/mix.png" alt="allservices">
+                <div class="floating-icon icon-1"><i class="fas fa-code"></i></div>
+                <div class="floating-icon icon-2"><i class="fas fa-mobile-alt"></i></div>
+                <div class="floating-icon icon-3"><i class="fas fa-microchip"></i></div>
+                <div class="floating-icon icon-4"><i class="fas fa-brain"></i></div>
+            </div>
         </div>
+    </section>
+    <!-- Hero Section End -->
 
-        <div class="row justify-content-center">
-          <div class="col-lg-8">
-            <div class="hero-image-container" data-aos="zoom-in" data-aos-delay="400">
-              <div class="hero-image">
-                <img src="assets/img/main/hero.jpeg" alt="Business Innovation" class="img-fluid">
-                <div class="image-decoration"></div>
-              </div>
+
+    <!-- About Section Start-->
+    <section id="about">
+        <span class="highlight1 a-o-s">About Us</span>
+        <div class="about-section">
+            <div class="about-container">
+                <div class="about-image a-o-s">
+                    <div class="about-img">
+                        <div class="image-wrapper">
+                            <img src="Images/about-section/gg.png" alt="Sample Image">
+                        </div>
+                    </div>
+                    <div class="about-experience-badge">
+                        <h3>1+</h3>
+                        <p>Years Experience</p>
+                    </div>
+                </div>
+                <div class="about-detail">
+                    <div class="about-heading">
+                        <h2 class="a-o-s">Pioneering <span class="highlight a-o-s">Innovation</span> in CodVionnology
+                        </h2>
+                    </div>
+                    <p class="a-o-s">CodVion is a leading CodVionnology solutions provider, specializing in
+                        cutting-edge web development, mobile applications, embedded systems, and artificial
+                        intelligence. Our mission is to empower businesses with innovative CodVionnology that drives
+                        growth
+                        and efficiency.</p>
+                    <p class="a-o-s">With a team of passionate engineers and developers, we transform complex
+                        challenges into elegant solutions. We believe in the power of CodVionnology to reshape
+                        industries
+                        and create meaningful impact.</p>
+
+                    <div class="about-items">
+                        <div class="about-items-detail a-o-s">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Expert Team of Engineers</span>
+                        </div>
+                        <div class="about-items-detail a-o-s">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Agile Development Process</span>
+                        </div>
+                        <div class="about-items-detail a-o-s">
+                            <i class="fas fa-check-circle"></i>
+                            <span>24/7 CodVionnical Support</span>
+                        </div>
+                        <div class="about-items-detail a-o-s">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Scalable Solutions</span>
+                        </div>
+                    </div>
+                    <div class="about-counter">
+                        <div class="counter-box a-o-s">
+                            <div class="counter-number" data-count="50" data-suffix="+">0</div>
+                            <div class="counter-label">Projects Done</div>
+                        </div>
+
+                        <div class="counter-box a-o-s">
+                            <div class="counter-number" data-count="95" data-suffix="%">0</div>
+                            <div class="counter-label">Client Satisfaction</div>
+                        </div>
+
+                        <div class="counter-box a-o-s">
+                            <div class="counter-number" data-count="2">0</div>
+                            <div class="counter-label">Expert Teams</div>
+                        </div>
+                    </div>
+                    <div class="about-bottom-section">
+                        <div class="values-section">
+                            <h2 class="highlight a-o-s">Our Core Values</h2>
+                            <div class="values-grid">
+                                <div class="value-item a-o-s">
+                                    <div class="value-icon"><i class="fa-solid fa-star"></i></div>
+                                    <h3>Excellence</h3>
+                                    <p>We pursue excellence in everything we do, delivering quality solutions that stand
+                                        the
+                                        test of time.</p>
+                                </div>
+                                <div class="value-item a-o-s">
+                                    <div class="value-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                                    <h3>Integrity</h3>
+                                    <p>We operate with transparency, honesty, and ethical practices in all our business
+                                        relationships.</p>
+                                </div>
+                                <div class="value-item a-o-s">
+                                    <div class="value-icon"><i class="fa-solid fa-lightbulb"></i></div>
+                                    <h3>Innovation</h3>
+                                    <p>We embrace change and continuously seek innovative approaches to solve modern
+                                        challenges.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="about-cta-section a-o-s">
+                            <h2>Ready to Work Together?</h2>
+                            <p>Let's discuss how we can help transform your business and achieve your goals.</p>
+                            <a href="#contact" class="about-cta-button">Get In Touch</a>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-          </div>
         </div>
+    </section>
+    <!-- About End -->
 
-        <div class="row justify-content-center">
-          <div class="col-lg-10">
-            <div class="hero-stats" data-aos="fade-up" data-aos-delay="500">
-              <div class="stat-item">
-                <div class="stat-icon">
-                  <i class="bi bi-trophy"></i>
+
+    <!-- Service Start-->
+    <section id="services">
+        <div class="service">
+            <h2 class="service-title a-o-s">Our Service</h2>
+            <p class="service-subtitle a-o-s">
+                Showcasing our latest projects and success stories
+            </p>
+            <div class="container">
+                <div class="service-project">
+                    <div class="service-section">
+                        <div class="service-card a-o-s">
+                            <div class="service-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <h3 class="service-card-title">Web Development</h3>
+                            <p class="service-description">Create stunning, responsive websites with modern frameworks
+                                and
+                                CodVionnologies. From e-commerce to enterprise solutions, we build scalable web
+                                applications.
+                            </p>
+                            <ul class="service-features">
+                                <li><i class="fas fa-chevron-right"></i> Responsive Design</li>
+                                <li><i class="fas fa-chevron-right"></i> Full-Stack Development</li>
+                                <li><i class="fas fa-chevron-right"></i> CMS Integration</li>
+                                <li><i class="fas fa-chevron-right"></i> E-commerce Solutions</li>
+                            </ul>
+                            <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="service-section">
+                        <div class="service-card a-o-s">
+                            <div class="service-icon">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <h3 class="service-card-title">App Development</h3>
+                            <p class="service-description">Native and cross-platform mobile applications for iOS and
+                                Android. Intuitive interfaces with powerful functionality for optimal user engagement.
+                            </p>
+                            <ul class="service-features">
+                                <li><i class="fas fa-chevron-right"></i> iOS & Android Apps</li>
+                                <li><i class="fas fa-chevron-right"></i> Cross-Platform Solutions</li>
+                                <li><i class="fas fa-chevron-right"></i> UI/UX Design</li>
+                                <li><i class="fas fa-chevron-right"></i> App Store Deployment</li>
+                            </ul>
+                            <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="service-section">
+                        <div class="service-card a-o-s">
+                            <div class="service-icon">
+                                <i class="fas fa-microchip"></i>
+                            </div>
+                            <h3 class="service-card-title">Embedded Systems</h3>
+                            <p class="service-description">IoT devices, firmware development, and hardware integration.
+                                Building intelligent systems for automation, robotics, and industrial applications.</p>
+                            <ul class="service-features">
+                                <li><i class="fas fa-chevron-right"></i> IoT Solutions</li>
+                                <li><i class="fas fa-chevron-right"></i> Firmware Development</li>
+                                <li><i class="fas fa-chevron-right"></i> Hardware Integration</li>
+                                <li><i class="fas fa-chevron-right"></i> Real-time Systems</li>
+                            </ul>
+                            <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="service-section">
+                        <div class="service-card a-o-s">
+                            <div class="service-icon">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <h3 class="service-card-title">AI & Machine Learning</h3>
+                            <p class="service-description">Harness the power of artificial intelligence, machine
+                                learning,
+                                deep learning, and computer vision to automate processes and gain valuable insights.</p>
+                            <ul class="service-features">
+                                <li><i class="fas fa-chevron-right"></i> Machine Learning Models</li>
+                                <li><i class="fas fa-chevron-right"></i> Computer Vision</li>
+                                <li><i class="fas fa-chevron-right"></i> Natural Language Processing</li>
+                                <li><i class="fas fa-chevron-right"></i> Predictive Analytics</li>
+                            </ul>
+                            <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
                 </div>
-                <h3><span data-purecounter-start="0" data-purecounter-end="2" data-purecounter-duration="3"
-                    class="purecounter"></span>+</h3>
-                <p>Awards Won</p>
-              </div>
-              <div class="stat-item">
-                <div class="stat-icon">
-                  <i class="bi bi-people"></i>
-                </div>
-                <h3><span data-purecounter-start="0" data-purecounter-end="10" data-purecounter-duration="3"
-                    class="purecounter"></span>+</h3>
-                <p>Happy Clients</p>
-              </div>
-              <div class="stat-item">
-                <div class="stat-icon">
-                  <i class="bi bi-lightning"></i>
-                </div>
-                <h3><span data-purecounter-start="0" data-purecounter-end="90" data-purecounter-duration="3"
-                    class="purecounter"></span>%</h3>
-                <p>Project Success</p>
-              </div>
-              <div class="stat-item">
-                <div class="stat-icon">
-                  <i class="bi bi-globe"></i>
-                </div>
-                <h3><span data-purecounter-start="0" data-purecounter-end="1" data-purecounter-duration="3"
-                    class="purecounter"></span>+</h3>
-                <p>Countries Served</p>
-              </div>
             </div>
-          </div>
         </div>
-      </div>
-    </section><!-- /Hero Section -->
+    </section>
+    <!-- Service Section End -->
 
-    <!-- About Section -->
-    <section id="about" class="about section">
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <span class="description-title">About</span>
-        <h2>About</h2>
-        <p>Codvion is a tech-driven company focused on delivering smart businesses through innovative code.</p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gx-0 gx-lg-5 gy-5 align-items-center">
-          <div class="col-lg-6" data-aos="zoom-out" data-aos-delay="200">
-            <div class="image-wrapper">
-              <div class="image-box">
-                <img src="assets/img/about/about-square-15.webp" class="img-fluid" alt="About Image" loading="lazy">
-              </div>
-              <div class="experience-box" data-aos="zoom-in" data-aos-delay="300">
-                <div class="years">1+</div>
-                <div class="text">Year of<br>Experience</div>
-              </div>
+    <!-- Portfolio Section Start-->
+    <section id="portfolio">
+        <div class="portfolio">
+            <h2 class="portfolio-title a-o-s">Our Portfolio</h2>
+            <p class="portfolio-subtitle a-o-s">
+                Showcasing our latest projects and success stories
+            </p>
+            <div class="portfolio-filters">
+                <button class="filter-btn a-o-s active" data-filter="all">All Projects</button>
+                <button class="filter-btn a-o-s" data-filter="web">Web Development</button>
+                <button class="filter-btn a-o-s" data-filter="mobile">Mobile Apps</button>
+                <button class="filter-btn a-o-s" data-filter="embedded">Embedded Systems</button>
+                <button class="filter-btn a-o-s" data-filter="ai">AI/ML</button>
             </div>
-          </div>
-
-          <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
-            <div class="content">
-              <div class="section-header">
-                <h2>Transforming Ideas Into Digital Reality</h2>
-              </div>
-
-              <p class="highlight-text">At Codvion, we turn your concepts into powerful digital products with precision
-                and creativity. From development to deployment, we bring your vision to life with innovative technology.
-              </p>
-
-              <div class="features-list">
-                <div class="feature-item" data-aos="zoom-in" data-aos-delay="300">
-                  <div class="icon-box">
-                    <i class="bi bi-check2-circle"></i>
-                  </div>
-                  <div class="text">
-                    <h4>Custom Development</h4>
-                    <p>At Codvion, we build tailored software solutions designed to meet your unique business needs.
-                      From concept to code, our team delivers high-performance, scalable applications that drive real
-                      results.</p>
-                  </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item a-o-s" data-category="web">
+                    <div class="portfolio-image">🌐</div>
+                    <div class="portfolio-content">
+                        <span class="portfolio-category">Web Development</span>
+                        <h3>E-Commerce Platform</h3>
+                        <p>Full-stack e-commerce solution with real-time inventory management and payment integration.
+                        </p>
+                    </div>
                 </div>
-
-                <div class="feature-item" data-aos="zoom-in" data-aos-delay="400">
-                  <div class="icon-box">
-                    <i class="bi bi-lightbulb"></i>
-                  </div>
-                  <div class="text">
-                    <h4>Seamless Integration</h4>
-                    <p>Codvion ensures your new solutions work effortlessly with existing systems, enabling smooth
-                      workflows and enhanced productivity.</p>
-                  </div>
+                <div class="portfolio-item a-o-s" data-category="mobile">
+                    <div class="portfolio-image">📱</div>
+                    <div class="portfolio-content">
+                        <span class="portfolio-category">Mobile App</span>
+                        <h3>Fitness Tracking App</h3>
+                        <p>Cross-platform mobile app with activity tracking, workout plans, and social features.</p>
+                    </div>
                 </div>
-
-                <div class="feature-item" data-aos="zoom-in" data-aos-delay="500">
-                  <div class="icon-box">
-                    <i class="bi bi-graph-up-arrow"></i>
-                  </div>
-                  <div class="text">
-                    <h4>Growth Strategy</h4>
-                    <p>At Codvion, we craft data-driven strategies that fuel your business expansion and market reach.
-                      Our tailored plans align technology and innovation to unlock new opportunities and sustainable
-                      growth.</p>
-                  </div>
+                <div class="portfolio-item a-o-s" data-category="ai">
+                    <div class="portfolio-image">🤖</div>
+                    <div class="portfolio-content">
+                        <span class="portfolio-category">AI/ML</span>
+                        <h3>Predict Analytic Dashboard</h3>
+                        <p>Machine learning model for sales forecasting with interactive data visualization.</p>
+                    </div>
                 </div>
-              </div>
-
-              <div class="cta-buttons">
-                <a href="#" class="btn-learn-more">Learn More</a>
-              </div>
+                <div class="portfolio-item a-o-s" data-category="embedded">
+                    <div class="portfolio-image">⚙️</div>
+                    <div class="portfolio-content">
+                        <span class="portfolio-category">Embedded Systems</span>
+                        <h3>Smart Home Controller</h3>
+                        <p>IoT device for home automation with voice control and energy monitoring capabilities.</p>
+                    </div>
+                </div>
+                <div class="portfolio-item a-o-s" data-category="web">
+                    <div class="portfolio-image">🌐</div>
+                    <div class="portfolio-content">
+                        <span class="portfolio-category">Web Development</span>
+                        <h3>SaaS Dashboard</h3>
+                        <p>Cloud-based analytics platform with real-time data processing and team collaboration.</p>
+                    </div>
+                </div>
+                <div class="portfolio-item a-o-s" data-category="mobile">
+                    <div class="portfolio-image">📱</div>
+                    <div class="portfolio-content">
+                        <span class="portfolio-category">Mobile App</span>
+                        <h3>Food Delivery App</h3>
+                        <p>On-demand delivery platform with GPS tracking, payment gateway, and rating system.</p>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
+    </section>
+    <!-- Portfolio Section End -->
 
-      </div>
+    <!-- Contact Section Start -->
+    <section class="contact-container" id="contact">
+        <div class="contact-header">
+            <h1 class="a-o-s">Get In Touch</h1>
+            <p class="a-o-s">Have a question or want to work together? We'd love to hear from you.</p>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <div class="info-card a-o-s">
+                        <h2>Contact Information</h2>
+                        <a href="tel:+923214086800" class="info-item">
+                            <div class="info-icon">
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z" />
+                                </svg>
+                            </div>
+                            <div class="info-details">
+                                <h3>Phone</h3>
+                                <p>+92 3214086800</p>
+                            </div>
+                        </a>
 
-    </section><!-- /About Section -->
+                        <a href="mailto:codvion@gmail.com" class="info-item">
+                            <div class="info-icon">
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+                                </svg>
+                            </div>
+                            <div class="info-details">
+                                <h3>Email</h3>
+                                <p>codvion@email.com</p>
+                            </div>
+                        </a>
 
-    <!-- Services Section -->
-    <section id="services" class="services section">
+                        <a href="https://maps.google.com" target="_blank" class="info-item">
+                            <div class="info-icon">
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+                                </svg>
+                            </div>
+                            <div class="info-details">
+                                <h3>Address</h3>
+                                <p>Lahore, Punjab, Pakistan</p>
+                            </div>
+                        </a>
+                    </div>
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <span class="description-title">Services</span>
-        <h2>Services</h2>
-        <p>Integrate powerful AI-driven web applications seamlessly to enhance user experience and automate your
-          workflows</p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="services-container">
-          <div class="row g-4">
-            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-              <div class="service-item">
-                <div class="service-icon">
-                  <i class="bi bi-code-slash"></i>
+                    <div class="features-card a-o-s">
+                        <h2>Why Choose Us?</h2>
+                        <div class="feature-item">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="white">
+                                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                            </svg>
+                            <span>Quick response within 24 hours</span>
+                        </div>
+                        <div class="feature-item">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="white">
+                                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                            </svg>
+                            <span>Professional and dedicated team</span>
+                        </div>
+                        <div class="feature-item">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="white">
+                                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                            </svg>
+                            <span>Quality service guaranteed</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="service-content">
-                  <span class="service-number">01</span>
-                  <h3 class="service-title">Web Development</h3>
-                  <p class="service-text">We create responsive, user-friendly websites and web applications. Using the
-                    latest technologies, we build fast, secure, and scalable solutions that deliver an exceptional
-                    digital experience</p>
-                  <a href="service-details.html" class="service-link">
-                    Learn More
-                    <i class="bi bi-arrow-right"></i>
-                  </a>
+                <div class="contact-form a-o-s">
+                    <div id="formContent">
+                        <h2>Send us a Message</h2>
+                        <div id="form-success-message" style="display: none;">
+                            <p>✓ Thank you! Your message has been sent successfully.</p>
+                        </div>
+                        <div id="form-error-message" style="display: none;">
+                            <p>✗ Oops! Something went wrong. Please try again.</p>
+                        </div>
+
+                        <form id="contactForm" name="contact" method="POST" data-netlify="true"
+                            netlify-honeypot="bot-field" enctype="multipart/form-data">
+                            <input type="hidden" name="form-name" value="contact" />
+                            <p class="hidden">
+                                <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+                            </p>
+
+                            <div class="row">
+                                <div>
+                                    <label for="cname">Name</label>
+                                    <input id="cname" type="text" name="name" required />
+                                </div>
+                                <div>
+                                    <label for="cemail">Email</label>
+                                    <input id="cemail" type="email" name="email" required />
+                                </div>
+                            </div>
+
+                            <label for="cmsg">Message</label>
+                            <textarea id="cmsg" name="message" rows="4" required></textarea>
+
+                            <label for="cfile">Attachment (optional)</label>
+                            <input id="cfile" type="file" name="attachment" />
+
+                            <button class="btn" type="submit">Send Contact</button>
+                            <div class="success" id="contactSuccess">Submitted successfully.</div>
+                            <div class="error" id="contactError">Submission failed. Try again.</div>
+                        </form>
+                    </div>
                 </div>
-              </div>
             </div>
-
-            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-              <div class="service-item">
-                <div class="service-icon">
-                  <i class="fa-solid fa-mobile-screen"></i>
-                </div>
-                <div class="service-content">
-                  <span class="service-number">02</span>
-                  <h3 class="service-title">App Development</h3>
-                  <p class="service-text">We design and develop high-quality mobile and desktop applications that
-                    combine functionality with intuitive user experience. Whether it’s iOS, Android, or cross-platform
-                  </p>
-                  <a href="service-details.html" class="service-link">
-                    Learn More
-                    <i class="bi bi-arrow-right"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
-              <div class="service-item">
-                <div class="service-icon">
-                  <i class="fa-solid fa-microchip"></i>
-                </div>
-                <div class="service-content">
-                  <span class="service-number">03</span>
-                  <h3 class="service-title">Embedded system</h3>
-                  <p class="service-text">We specialize in developing robust embedded systems that power smart devices
-                    and IoT solutions. Our expertise ensures seamless hardware-software integration for efficient.</p>
-                  <a href="service-details.html" class="service-link">
-                    Learn More
-                    <i class="bi bi-arrow-right"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
-              <div class="service-item">
-                <div class="service-icon">
-                  <i class="fa-solid fa-laptop-code"></i>
-                </div>
-                <div class="service-content">
-                  <span class="service-number">04</span>
-                  <h3 class="service-title">AI &amp; ML</h3>
-                  <p class="service-text">We harness the power of Artificial Intelligence and Machine
-                    Learning to create intelligent solutions that drive automation, enhance decision-making, and unlock
-                    new business opportunities. Our tailored AI/ML models are designed to adapt and grow with your
-                    needs.</p>
-                  <a href="service-details.html" class="service-link">
-                    Learn More
-                    <i class="bi bi-arrow-right"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
+    </section>
+    <!-- Contact Section End -->
 
-      <!-- Portfolio Section -->
-      <section id="portfolio" class="portfolio section">
 
-        <!-- Section Title -->
-        <div class="container section-title" data-aos="fade-up">
-          <span class="description-title">Portfolio</span>
-          <h2>Portfolio</h2>
-          <p>Showcasing innovative projects and expertise in web, app, embedded systems, and AI/ML development.</p>
-        </div><!-- End Section Title -->
-
-        <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-          <div class="isotope-layout" data-default-filter="*" data-layout="fitRows" data-sort="original-order">
-
-            <div class="portfolio-filters-wrapper" data-aos="fade-up" data-aos-delay="100">
-              <ul class="portfolio-filters isotope-filters">
-                <li data-filter="*" class="filter-active">All Projects</li>
-                <li data-filter=".filter-branding">Web developing</li>
-                <li data-filter=".filter-web">App developing</li>
-                <li data-filter=".filter-print">Embedded system</li>
-                <li data-filter=".filter-motion">AI &amp; ML</li>
-              </ul>
+    <!-- Footer Start-->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>CodVion</h3>
+                <p>Innovative CodVionnology solutions for modern businesses. We transform ideas into digital reality.
+                </p>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="#" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#" class="social-link"><i class="fa-brands fa-youtube"></i></a>
+                </div>
             </div>
-
-            <div class="row gy-4 portfolio-grid isotope-container" data-aos="fade-up" data-aos-delay="200">
-
-              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-                <div class="portfolio-card">
-                  <div class="image-container">
-                    <img src="assets/img/Portfolio/web.jpeg" class="img-fluid" alt="Brand Identity" loading="lazy">
-                    <div class="overlay">
-                      <div class="overlay-content">
-                        <a href="assets/img/portfolio/web.jpeg" class="glightbox zoom-link"
-                          title="Brand Identity Project">
-                          <i class="bi bi-zoom-in"></i>
-                        </a>
-                        <a href="portfolio-details.html" class="details-link" title="View Project Details">
-                          <i class="bi bi-arrow-right"></i>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="content">
-                    <h3>Web Developing</h3>
-                    <p>Interactive UI with clean backend logic</p>
-                  </div>
-                </div>
-              </div><!-- End Portfolio Item -->
-
-              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
-                <div class="portfolio-card">
-                  <div class="image-container">
-                    <img src="assets/img/Portfolio/app.jpeg" class="img-fluid" alt="E-commerce Platform" loading="lazy">
-                    <div class="overlay">
-                      <div class="overlay-content">
-                        <a href="assets/img/portfolio/app.jpeg" class="glightbox zoom-link" title="E-commerce Platform">
-                          <i class="bi bi-zoom-in"></i>
-                        </a>
-                        <a href="portfolio-details.html" class="details-link" title="View Project Details">
-                          <i class="bi bi-arrow-right"></i>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="content">
-                    <h3>App Development</h3>
-                    <p>Scalable, responsive app development</p>
-                  </div>
-                </div>
-              </div><!-- End Portfolio Item -->
-
-              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-print">
-                <div class="portfolio-card">
-                  <div class="image-container">
-                    <img src="assets/img/portfolio/emb.jpeg" class="img-fluid" alt="Magazine Design" loading="lazy">
-                    <div class="overlay">
-                      <div class="overlay-content">
-                        <a href="assets/img/portfolio/emb.jpeg" class="glightbox zoom-link" title="Magazine Design">
-                          <i class="bi bi-zoom-in"></i>
-                        </a>
-                        <a href="portfolio-details.html" class="details-link" title="View Project Details">
-                          <i class="bi bi-arrow-right"></i>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="content">
-                    <h3>Embedded system</h3>
-                    <p>Real-time embedded system development</p>
-                  </div>
-                </div>
-              </div><!-- End Portfolio Item -->
-
-              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-motion">
-                <div class="portfolio-card">
-                  <div class="image-container">
-                    <img src="assets/img/portfolio/ai.jpeg" class="img-fluid" alt="Motion Graphics" loading="lazy">
-                    <div class="overlay">
-                      <div class="overlay-content">
-                        <a href="assets/img/portfolio/ai.jpeg" class="glightbox zoom-link" title="Motion Graphics">
-                          <i class="bi bi-zoom-in"></i>
-                        </a>
-                        <a href="portfolio-details.html" class="details-link" title="View Project Details">
-                          <i class="bi bi-arrow-right"></i>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="content">
-                    <h3>AI &amp; ML</h3>
-                    <p>Intelligent data-driven model solutions</p>
-                  </div>
-                </div>
-              </div><!-- End Portfolio Item -->
-            </div><!-- End Portfolio Grid -->
-          </div>
-        </div>
-      </section><!-- /Portfolio Section -->
-
-
-      <!-- Faq Section -->
-      <section id="faq" class="faq section">
-
-        <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-          <div class="row justify-content-center">
-            <div class="col-lg-10">
-
-              <div class="faq-wrapper">
-
-                <div class="faq-item faq-active">
-                  <div class="faq-header">
-                    <div class="faq-icon">
-                      <i class="bi bi-question-circle"></i>
-                    </div>
-                    <h4>1. What technologies do you use for web development?</h4>
-                    <div class="faq-toggle">
-                      <i class="bi bi-plus"></i>
-                      <i class="bi bi-dash"></i>
-                    </div>
-                  </div>
-                  <div class="faq-content">
-                    <div class="content-inner">
-                      <p>I use modern front-end frameworks like React or Vue.js, combined with back-end technologies
-                        such as Node.js, Express, and databases like MongoDB or PostgreSQL.</p>
-                    </div>
-                  </div>
-                </div><!-- End FAQ Item -->
-
-                <div class="faq-item">
-                  <div class="faq-header">
-                    <div class="faq-icon">
-                      <i class="bi bi-question-circle"></i>
-                    </div>
-                    <h4>2. Do you build cross-platform mobile apps?</h4>
-                    <div class="faq-toggle">
-                      <i class="bi bi-plus"></i>
-                      <i class="bi bi-dash"></i>
-                    </div>
-                  </div>
-                  <div class="faq-content">
-                    <div class="content-inner">
-                      <p>Yes, I develop both native and cross-platform apps using tools like Flutter, React Native, and
-                        Kotlin/Swift when needed.</p>
-                    </div>
-                  </div>
-                </div><!-- End FAQ Item -->
-
-                <div class="faq-item">
-                  <div class="faq-header">
-                    <div class="faq-icon">
-                      <i class="bi bi-question-circle"></i>
-                    </div>
-                    <h4>3. What types of embedded systems have you worked on?</h4>
-                    <div class="faq-toggle">
-                      <i class="bi bi-plus"></i>
-                      <i class="bi bi-dash"></i>
-                    </div>
-                  </div>
-                  <div class="faq-content">
-                    <div class="content-inner">
-                      <p>I’ve built projects using microcontrollers (like Arduino, STM32, ESP32) for applications in
-                        IoT, automation, and real-time sensor-based systems.
-                      </p>
-                    </div>
-                  </div>
-                </div><!-- End FAQ Item -->
-
-                <div class="faq-item">
-                  <div class="faq-header">
-                    <div class="faq-icon">
-                      <i class="bi bi-question-circle"></i>
-                    </div>
-                    <h4>4. What kind of AI/ML projects do you work on?</h4>
-                    <div class="faq-toggle">
-                      <i class="bi bi-plus"></i>
-                      <i class="bi bi-dash"></i>
-                    </div>
-                  </div>
-                  <div class="faq-content">
-                    <div class="content-inner">
-                      <p>I work on projects involving machine learning models, computer vision, natural language
-                        processing, and predictive analytics using Python, TensorFlow, and scikit-learn.</p>
-                    </div>
-                  </div>
-                </div><!-- End FAQ Item -->
-
-                <div class="faq-item">
-                  <div class="faq-header">
-                    <div class="faq-icon">
-                      <i class="bi bi-question-circle"></i>
-                    </div>
-                    <h4>5. Can I see the code or demos of your projects?</h4>
-                    <div class="faq-toggle">
-                      <i class="bi bi-plus"></i>
-                      <i class="bi bi-dash"></i>
-                    </div>
-                  </div>
-                  <div class="faq-content">
-                    <div class="content-inner">
-                      <p>Yes! Most of my projects are available on GitHub
-                        , and live demos or videos are linked directly in the portfolio.</p>
-                    </div>
-                  </div>
-                </div><!-- End FAQ Item -->
-
-              </div>
-
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <span><a href="#home">Home</a></span>
+                <span><a href="#about">About</a></span>
+                <span><a href="#services">Services</a></span>
+                <span><a href="#portfolio">Portfolio</a></span>
+                <span><a href="#contact">Contact</a></span>
             </div>
-          </div>
-
-        </div>
-
-      </section><!-- /Faq Section -->
-
-      <!-- Contact Section -->
-      <section id="contact" class="contact section">
-        <!-- Section Title -->
-        <div class="container section-title" data-aos="fade-up">
-          <span class="description-title">Contact</span>
-          <h2>Contact</h2>
-          <p>Let’s build something great together—get in touch!</p>
-        </div><!-- End Section Title -->
-
-        <div class="container">
-          <div class="contact-wrapper">
-            <div class="contact-info-panel">
-              <div class="contact-info-header">
-                <h3>Contact Information</h3>
-                <p>I'm always open to discussing new projects, collaboration opportunities, or just talking tech.
-                  Whether you have a question, an idea, or want to work together—feel free to reach out!.</p>
-              </div>
-
-              <div class="contact-info-cards">
-                <div class="info-card">
-                  <div class="icon-container">
-                    <i class="bi bi-pin-map-fill"></i>
-                  </div>
-                  <div class="card-content">
-                    <h4>Our Location</h4>
-                    <p>ABC</p>
-                  </div>
-                </div>
-
-                <div class="info-card">
-                  <div class="icon-container">
-                    <i class="bi bi-envelope-open"></i>
-                  </div>
-                  <div class="card-content">
-                    <h4>Email Us</h4>
-                    <p>info@example.com</p>
-                  </div>
-                </div>
-
-                <div class="info-card">
-                  <div class="icon-container">
-                    <i class="bi bi-telephone-fill"></i>
-                  </div>
-                  <div class="card-content">
-                    <h4>Call Us</h4>
-                    <p>+92 32000000</p>
-                  </div>
-                </div>
-
-                <div class="info-card">
-                  <div class="icon-container">
-                    <i class="bi bi-clock-history"></i>
-                  </div>
-                  <div class="card-content">
-                    <h4>Working Hours</h4>
-                    <p>Monday-Saturday: 9AM - 7PM</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="social-links-panel">
-                <h5>Follow Us</h5>
-                <div class="social-icons">
-                  <a href="#"><i class="bi bi-facebook"></i></a>
-                  <a href="#"><i class="bi bi-twitter-x"></i></a>
-                  <a href="#"><i class="bi bi-instagram"></i></a>
-                  <a href="#"><i class="bi bi-linkedin"></i></a>
-                  <a href="#"><i class="bi bi-youtube"></i></a>
-                </div>
-              </div>
+            <div class="footer-section">
+                <h3>Services</h3>
+                <span><a href="#services"> Web Development</a> </span>
+                <span><a href="#services"> Mobile App Development</a> </span>
+                <span><a href="#services"> Embedded Systems</a> </span>
+                <span><a href="#services"> AI & Machine Learning</a> </span>
             </div>
+            <div class="footer-section">
+                <h3>Newsletter</h3>
+                <p>Subscribe to get updates on our latest projects and insights.</p>
+                <form id="feedbackForm" name="feedback" method="POST" data-netlify="true" netlify-honeypot="bot-field"
+                    enctype="multipart/form-data">
+                    <input type="hidden" name="form-name" value="feedback" />
+                    <p class="hidden">
+                        <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+                    </p>
+                    <label for="ftext">Email</label>
+                    <input id="ftext" name="email" rows="3" required></input>
 
-            <div class="contact-form-panel">
-              <div class="map-container">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus"
-                  width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
-                  referrerpolicy="no-referrer-when-downgrade"></iframe>
-              </div>
-
-              <div class="form-container">
-                <h3>Send Us a Message</h3>
-                <p>Have a question, project idea, or just want to say hello? We’d love to hear from you!</p>
-
-                <form action="forms/contact.php" method="post" class="php-email-form">
-                  <div class="form-floating mb-3">
-                    <input type="text" class="form-control" id="nameInput" name="name" placeholder="Full Name"
-                      required="">
-                    <label for="nameInput">Full Name</label>
-                  </div>
-
-                  <div class="form-floating mb-3">
-                    <input type="email" class="form-control" id="emailInput" name="email" placeholder="Email Address"
-                      required="">
-                    <label for="emailInput">Email Address</label>
-                  </div>
-
-                  <div class="form-floating mb-3">
-                    <input type="text" class="form-control" id="subjectInput" name="subject" placeholder="Subject"
-                      required="">
-                    <label for="subjectInput">Subject</label>
-                  </div>
-
-                  <div class="form-floating mb-3">
-                    <textarea class="form-control" id="messageInput" name="message" rows="5" placeholder="Your Message"
-                      style="height: 150px" required=""></textarea>
-                    <label for="messageInput">Your Message</label>
-                  </div>
-
-                  <div class="my-3">
-                    <div class="loading">Loading</div>
-                    <div class="error-message"></div>
-                    <div class="sent-message">Your message has been sent. Thank you!</div>
-                  </div>
-
-                  <div class="d-grid">
-                    <button type="submit" class="btn-submit">Send Message <i class="bi bi-send-fill ms-2"></i></button>
-                  </div>
+                    <button class="btn" type="submit">Send Feedback</button>
+                    <div class="success" id="feedbackSuccess">Submitted successfully.</div>
+                    <div class="error" id="feedbackError">Submission failed. Try again.</div>
                 </form>
-              </div>
             </div>
-          </div>
         </div>
-      </section><!-- /Contact Section -->
-
-  </main>
-
-  <footer id="footer" class="footer light-background">
-
-    <div class="container">
-      <div class="row gy-3">
-        <div class="col-lg-3 col-md-6 d-flex">
-          <i class="bi bi-geo-alt icon"></i>
-          <div class="address">
-            <h4>Address</h4>
-            <p>XYZ</p>
-            <p>ABC</p>
-            <p></p>
-          </div>
-
+        <div class="footer-bottom">
+            <p>&copy; 2025 CodVion. All rights reserved. Designed by CodVion Team</p>
         </div>
+    </footer>
+    <!-- Footer End -->
 
-        <div class="col-lg-3 col-md-6 d-flex">
-          <i class="bi bi-telephone icon"></i>
-          <div>
-            <h4>Contact</h4>
-            <p>
-              <strong>Phone:</strong> <span>+92 32000000000</span><br>
-              <strong>Email:</strong> <span>info@example.com</span><br>
-            </p>
-          </div>
+    <!-- Modal -->
+    <div class="modal-backdrop" id="modalBackdrop" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <div class="modal">
+            <h3 id="modalTitle">Thank you!</h3>
+            <p id="modalMessage">Your submission has been received.</p>
+            <div style="display:flex; gap:8px; justify-content:flex-end;">
+                <button class="btn secondary" id="modalClose">Close</button>
+            </div>
         </div>
-
-        <div class="col-lg-3 col-md-6 d-flex">
-          <i class="bi bi-clock icon"></i>
-          <div>
-            <h4>Opening Hours</h4>
-            <p>
-              <strong>Mon-Sat:</strong> <span>11AM - 23PM</span><br>
-              <strong>Sunday</strong>: <span>Closed</span>
-            </p>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6">
-          <h4>Follow Us</h4>
-          <div class="social-links d-flex">
-            <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
-            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
-          </div>
-        </div>
-
-      </div>
     </div>
-
-    <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">Codvion</strong> <span>All Rights Reserved</span></p>
-      <div class="credits">
-        Designed by <a href="#">Codvion</a>
-      </div>
+    <!-- Back to top start -->
+    <div id="backtotop">
+        <i class="fa-solid fa-arrow-up"></i>
     </div>
-  </footer>
+    <!-- back to top end -->
 
-  <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
-      class="bi bi-arrow-up-short"></i></a>
 
-  <!-- Preloader -->
-  <div id="preloader"></div>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-
-  <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
-
+    <!-- counter animation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/countup.js/2.6.2/countUp.umd.min.js"></script>
+    <!-- Main Js -->
+    <script src="script.js"></script>
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 </body>
 
 </html>

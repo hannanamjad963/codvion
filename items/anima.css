@@ -1,0 +1,267 @@
+/* Header Start */
+
+.header-main a.aos {
+    animation: fadedown 1s ease 1 forwards;
+}
+
+.header-main a:nth-child(2).aos {
+    animation: zoomin 1s ease 1 forwards;
+    animation-delay: 0.2s;
+}
+
+.header .header-items nav.aos {
+    animation: fadeup 1s ease 1 forwards;
+
+}
+
+/* Header End */
+
+
+/* Hero Start */
+.hero-title.aos {
+    animation: fadeleft 1s ease 1 forwards;
+}
+
+.hero-subtitle.aos {
+    animation: fadeleft 1s ease 1 0.2s forwards;
+}
+
+.hero-buttons a.aos {
+    animation: fadeup 1s ease 1 0.4s forwards;
+}
+
+
+.hero-image.aos {
+    animation: faderight 1s ease 1 forwards;
+}
+
+/* Hero Start */
+
+/* About Start */
+
+#about .highlight1.aos {
+    animation: fadeleft 1s ease 1 forwards;
+}
+
+#about .highlight1.aos::before {
+    width: 50%;
+}
+
+.about-image.aos {
+    animation: fadeleft 1s ease 1 0.2s forwards;
+}
+
+.about-heading h2.aos {
+    animation: faderight 1s ease 1 0.2s forwards;
+}
+
+.about-detail>p.aos {
+    animation: faderight 1s ease 1 0.2s forwards;
+}
+
+.about-heading .highlight.aos::before {
+    width: 50%;
+}
+
+.about-items-detail.aos {
+    animation: faderight 1s ease 1 0.2s forwards;
+}
+
+.about-items-detail:nth-child(2).aos {
+    animation-delay: 0.4s;
+}
+
+.about-items-detail:nth-child(3).aos {
+    animation-delay: 0.6s;
+}
+
+.about-items-detail:nth-child(4).aos {
+    animation-delay: 0.8s;
+}
+
+.about-counter .counter-box.aos {
+    animation: fadeup 1s ease 1 forwards;
+}
+
+.about-counter .counter-box:nth-child(2).aos {
+    animation: fadeup 1s ease 1 0.4s forwards;
+}
+
+.about-counter .counter-box:nth-child(3).aos {
+    animation: fadeup 1s ease 1 0.4s forwards;
+}
+
+.values-section h2.aos {
+    animation: fadeleft 1s ease 1 0.2s forwards;
+}
+
+.values-section .highlight.aos::before {
+    width: 50%;
+}
+
+.values-grid .value-item.aos {
+    animation: fadeup 1s ease 1 forwards;
+}
+
+.values-grid .value-item:nth-child(2).aos {
+    animation: fadeup 1s ease 1 0.2s forwards;
+}
+
+.values-grid .value-item:nth-child(3).aos {
+    animation: fadeup 1s ease 1 0.4s forwards;
+}
+
+.about-bottom-section .about-cta-section.aos {
+    animation: zoomin 1s ease 1 forwards;
+}
+
+/* About End */
+
+/* Service Section Start */
+
+.service .service-title.aos {
+    animation: fadeup 1s ease 1 forwards;
+}
+
+.service .service-subtitle.aos {
+    animation: fadeup 1s ease 1 0.4s forwards;
+}
+
+.service .service-title.aos::before {
+    width: 50%;
+}
+
+.service-card.aos {
+    animation: fadeup 1s ease 1 0.2s forwards;
+}
+
+/* Service Section End */
+
+/* Portfolio Section Start */
+
+.portfolio .portfolio-title.aos {
+    animation: fadeup 1s ease 1 forwards;
+}
+
+.portfolio .portfolio-subtitle.aos {
+    animation: fadeup 1s ease 1 forwards;
+}
+
+.portfolio .portfolio-title.aos::before {
+    width: 50%;
+}
+
+.filter-btn.aos {
+    animation: fadeup 1s ease 1 0.2s forwards;
+}
+
+.filter-btn:nth-child(2).aos {
+    animation: fadeup 1s ease 1 0.4s forwards;
+}
+
+.filter-btn:nth-child(4).aos {
+    animation: fadeup 1s ease 1 0.4s forwards;
+}
+
+.portfolio-grid .portfolio-item.aos {
+    animation: fadeup 1s ease 1 0.5s forwards;
+}
+
+/* Portfolio Section End */
+
+/* Contact Section Start */
+
+.contact-header h1.aos {
+    animation: fadeup 1s ease 1 forwards;
+}
+
+.contact-header h1.aos::before {
+    width: 50%;
+}
+
+.contact-header p.aos {
+    animation: fadeup 1s ease 1 0.2s forwards;
+}
+
+.contact-info.aos {
+    animation: fadeleft 1s ease 1 0.5s forwards;
+}
+
+.info-card.aos,
+.features-card.aos {
+    animation: fadeleft 1s ease 1 0.5s forwards;
+}
+
+.contact-form.aos {
+    animation: faderight 1s ease 1 0.5s forwards;
+}
+
+/* Contact Section End */
+
+/* Responsive */
+@media (max-width:786px) {
+    .header .header-items nav.aos {
+        animation: none;
+    }
+}
+
+/* Animation Setups */
+@keyframes fadeleft {
+    0% {
+        opacity: 0;
+        transform: translateX(-150px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes faderight {
+    0% {
+        opacity: 0;
+        transform: translateX(150px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes fadeup {
+    0% {
+        opacity: 0;
+        transform: translateY(150px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes fadedown {
+    0% {
+        opacity: 0;
+        transform: translateY(-150px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes zoomin {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
